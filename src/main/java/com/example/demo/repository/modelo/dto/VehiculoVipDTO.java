@@ -1,6 +1,9 @@
 package com.example.demo.repository.modelo.dto;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import org.springframework.cglib.core.Local;
 
 
 public class VehiculoVipDTO {
@@ -11,7 +14,7 @@ public class VehiculoVipDTO {
 
 	private String marca;
 
-	private String anioFabricacion;
+	private LocalDate anioFabricacion;
 
 	private Double cilindraje;
 		
@@ -24,7 +27,7 @@ public class VehiculoVipDTO {
 	}
 	
 
-	public VehiculoVipDTO(String placa, String modelo, String marca, String anioFabricacion,
+	public VehiculoVipDTO(String placa, String modelo, String marca, LocalDate anioFabricacion,
 			Double cilindraje, BigDecimal valorICE, BigDecimal valorTotal) {
 		super();
 		this.placa = placa;
@@ -61,11 +64,11 @@ public class VehiculoVipDTO {
 		this.marca = marca;
 	}
 
-	public String getAnioFabricacion() {
+	public LocalDate getAnioFabricacion() {
 		return anioFabricacion;
 	}
 
-	public void setAnioFabricacion(String anioFabricacion) {
+	public void setAnioFabricacion(LocalDate anioFabricacion) {
 		this.anioFabricacion = anioFabricacion;
 	}
 

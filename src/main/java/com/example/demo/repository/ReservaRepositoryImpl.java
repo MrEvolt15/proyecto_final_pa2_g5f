@@ -3,7 +3,6 @@ package com.example.demo.repository;
 import java.time.LocalDate;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.example.demo.repository.modelo.Reserva;
